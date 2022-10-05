@@ -1,0 +1,210 @@
+.grid-1 {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30px 1fr;
+  gap: 10px;
+}
+.grid-1 div {
+  background-color: rgb(6, 102, 162);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-1 .one::after {
+  content: "Element1";
+  font-weight: bold;
+  color: white;
+}
+.grid-1 .two::after {
+  content: "Element2";
+  font-weight: bold;
+  color: white;
+}
+.grid-1 .three::after {
+  content: "Element2";
+  font-weight: bold;
+  color: white;
+}
+.grid-1 .four::after {
+  content: "Element3";
+  font-weight: bold;
+  color: white;
+}
+.grid-1 .five::after {
+  content: "Element4";
+  font-weight: bold;
+  color: white;
+}
+.grid-1 .six::after {
+  content: "Element5";
+  font-weight: bold;
+  color: white;
+}
+.layout {
+  height: 100vh;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "headerr headerr headerr headerr"
+    "cont cont cont asid"
+    "fot fot fot fot ";
+}
+header {
+  grid-area: headerr;
+  background-color: rgba(22, 180, 215, 0.693);
+}
+section {
+  grid-area: cont;
+  background-color: red;
+}
+aside {
+  grid-area: asid;
+  background-color: cadetblue;
+}
+footer {
+  grid-area: fot;
+  background-color: green;
+}
+.grid-2 {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr auto;
+  grid-template-rows: 1fr auto;
+  gap: 20px;
+}
+
+.grid-2 div {
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 20px;
+}
+.grid-3 {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, auto);
+  gap: 20px;
+}
+.grid-3 div {
+  background-color: rgb(29, 134, 232);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-weight: bold;
+}
+.grid-3 .one {
+  grid-area: 6/1/6/4;
+}
+
+.grid-3 .two {
+  grid-area: 2/1/2/3;
+}
+.grid-3 .three {
+  grid-area: 2/3/2/4;
+}
+.grid-3 .four {
+  grid-area: 3/1/3/2;
+}
+.grid-3 .five {
+  grid-area: 3/2/6/4;
+}
+
+.grid-3 .eight {
+  grid-area: 1/1/1/4;
+}
+
+.grid-4 {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  align-content: space-between;
+  gap: 20px;
+}
+.grid-4 div {
+  background-color: rgb(237, 90, 115);
+  color: aliceblue;
+  font-weight: bold;
+  text-align: center;
+}
+.grid-5 {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #ccc;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(1, auto);
+  grid-template-areas:
+    "a a b c"
+    "d e e c"
+    "d f f c"
+    "g k l m";
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid-5 div {
+  background-color: rgba(159, 151, 151, 0.495);
+}
+.OsamaMohamed {
+  grid-area: a;
+}
+.AhmedSaid {
+  grid-area: b;
+}
+.ShadyNabil {
+  grid-area: c;
+}
+.MohammedIbrahim {
+  grid-area: d;
+}
+.MahmoudMohamed {
+  grid-area: e;
+}
+.EzzEldin {
+  grid-area: f;
+}
+.MohamedSayed {
+  grid-area: g;
+}
+.IbrahimSayed {
+  grid-area: k;
+}
+.CamalSayed {
+  grid-area: l;
+}
+.EmanSayed {
+  grid-area: m;
+}
+.OsamaMohamed h3 {
+  margin: 10px;
+}
+.OsamaMohamed p {
+  margin: 10px auto;
+}
